@@ -6,8 +6,9 @@ const port = 8080//服务运行的端口
 
 app.get('/user',function(req,res){
     //向客户端响应数据
-    res.send("欢迎")
+    res.send("欢迎访问用户接口")
 })
+
 
 app.get('/list',(req,res)=>{
 
