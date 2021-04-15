@@ -9,11 +9,11 @@ var connection = mysql.createConnection({
 });
 connection.connect();
 //执行query
-connection.query('select user_id,user_name,email from p_users limit 10', function (error, results, fields) {
+connection.query('select user_id,user_name,email from p_users limit 10', function (error, results, fields) {
 // if (error) throw error;
     // console.log('The solution is: ', results[0].solution);
     //获取查询的结果 results
-    // console.log(error)
-    console.log(results[0].user_name)
+// console.log(error)
+    console.log(results)
 });
 connection.end();
