@@ -90,6 +90,29 @@ app.get('/', (req, res) => {
 
 })
 
+app.post('/user/reg',function(){
+    let user_name=req.user_name
+    let email=req.email
+    let mobil=""
+    let password=""
+
+    let sql=`insert into p_users (\`user_name\`,\`email\`,\`mobile\`,\`password\`)values
+    ('${user_name}','${email}','${mobile}','${password}')`
+
+    conncetion.query(sql,function(){
+
+    })
+
+})
+
+//login
+app.post('/user/login',function(){
+    let user_name=""
+    let password=""
+    $sql=``
+    
+})
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
